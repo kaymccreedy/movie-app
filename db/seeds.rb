@@ -20,3 +20,14 @@ actor.save
 
 actor = Actor.new({first_name: "Brad", last_name: "Pitt", known_for: "Fight Club"})
 actor.save
+
+# Movies
+
+movie = Movie.new({title: "The Witch", year: "2015", plot: "A family in 1630s New England is torn apart by the forces of witchcraft, black magic, and possession."})
+movie.save
+
+movie = Movie.new({title: "The Big Lebowski", year: "1998", plot: "Ultimate L.A. slacker Jeff 'The Dude' Lebowski, mistaken for a millionaire of the same name, seeks restitution for a rug ruined by debt collectors, enlisting his bowling buddies for help while trying to find the millionaire's missing wife."})
+movie.save
+
+movie = Movie.new({title: "The Grand Budapest Hotel", year: "2014", plot: "A writer encounters the owner of an aging high-class hotel, who tells him of his early years serving as a lobby boy in the hotel's glorious years under an exceptional concierge."})
+movie.save 
