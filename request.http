@@ -1,7 +1,56 @@
-### Post
-POST http://localhost:3000/actor
+### Actor Index
+GET http://localhost:3000/actors
+
+### Actor Show
+GET http://localhost:3000/actors/6
+
+### Actor Create
+POST http://localhost:3000/actors
 Content-Type: application/json
 
 {
-  "id": 6
+  "first_name": "Mark",
+  "last_name": "Wahlberg",
+  "known_for": "Boogie Nights"
 }
+
+### Actor Update
+PATCH http://localhost:3000/actors/17
+Content-Type: application/json
+
+{
+  "known_for": "Marky Mark"
+}
+
+### Actor Delete
+DELETE http://localhost:3000/actors/17
+
+
+
+
+### Movie Index
+GET http://localhost:3000/movies
+
+### Movie Show
+GET http://localhost:3000/movies/6
+
+### Movie Create
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "The Shining",
+  "year": "1972",
+  "plot": "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future."
+}
+
+### Movie Update
+PATCH http://localhost:3000/movies/7
+Content-Type: application/json
+
+{
+  "year": "1980"
+}
+
+### Movie Delete
+DELETE http://localhost:3000/movies/16
