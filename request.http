@@ -11,7 +11,8 @@ Content-Type: application/json
 {
   "first_name": "Mark",
   "last_name": "Wahlberg",
-  "known_for": "Boogie Nights"
+  "known_for": "Boogie Nights",
+  "age": "25"
 }
 
 ### Actor Update
@@ -19,7 +20,7 @@ PATCH http://localhost:3000/actors/17
 Content-Type: application/json
 
 {
-  "known_for": "Marky Mark"
+  "age": "51"
 }
 
 ### Actor Delete
@@ -49,6 +50,7 @@ PATCH http://localhost:3000/movies/7
 Content-Type: application/json
 
 {
+  "title": "The Shining",
   "year": "1980"
 }
 
