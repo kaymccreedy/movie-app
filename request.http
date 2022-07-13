@@ -9,9 +9,9 @@ POST http://localhost:3000/actors
 Content-Type: application/json
 
 {
-  "first_name": "Mark",
-  "last_name": "Wahlberg",
-  "known_for": "Boogie Nights",
+  "first_name": "Ralph",
+  "last_name": "Fiennes",
+  "known_for": "Saving Private Ryan",
   "age": "25"
 }
 

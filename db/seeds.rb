@@ -31,3 +31,9 @@ movie.save
 
 movie = Movie.new({title: "The Grand Budapest Hotel", year: "2014", plot: "A writer encounters the owner of an aging high-class hotel, who tells him of his early years serving as a lobby boy in the hotel's glorious years under an exceptional concierge."})
 movie.save 
+
+movie = Movie.new({title: "Se7en", year: "1997", plot: "Serial killer murders people by way of the seven deadly sins."})
+movie.save 
+
+movie = Movie.new({title: "Power of the Dog", year: "2021", plot: "Masculinity gets in the way."})
+movie.save 
