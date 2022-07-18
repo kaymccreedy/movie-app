@@ -1,3 +1,5 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTgyNDU0Njl9.zd9ilzxLrLAvWhZjI3f6E2QICKH1pLSgJ9pydtj6N9o
+
 ### Actor Index
 GET http://localhost:3000/actors
 
@@ -31,6 +33,7 @@ DELETE http://localhost:3000/actors/17
 
 ### Movie Index
 GET http://localhost:3000/movies
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTgyNDU0Njl9.zd9ilzxLrLAvWhZjI3f6E2QICKH1pLSgJ9pydtj6N9o
 
 ### Movie Show
 GET http://localhost:3000/movies/6
@@ -56,3 +59,27 @@ Content-Type: application/json
 
 ### Movie Delete
 DELETE http://localhost:3000/movies/16
+
+
+
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Romyn",
+  "email": "romyn@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "kay@test.com",
+  "password": "password"
+}
